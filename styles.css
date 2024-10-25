@@ -1,0 +1,411 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75em;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  position: relative;
+  overflow: hidden;
+
+
+}
+
+nav ul li a :hover {
+  color: #2b73e0; 
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    color: #ff007f;
+    font-size: 24px;
+}
+
+#search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    background-color: #1c1e2a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero-img {
+    border-radius: 10px;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.hero-text h2 {
+    color: #ff007f;
+}
+
+.play-btn {
+    background-color: #ff007f;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.playlist {
+    margin-top: 20px;
+}
+
+.album-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.album-card {
+    background-color: #1c1e2a;
+    border-radius: 10px;
+    width: 150px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.album-cover {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.song-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.controls button {
+    background-color: #ff007f;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.controls button:hover {
+    background-color:#359f0f;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.controls button:hover .play{
+    
+    background-color:#359f0f;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+footer {
+    background-color: #111222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player-details {
+    display: flex;
+    align-items: center;
+}
+
+.current-song-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.player-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.player-controls button:hover {
+    color: #ff007f;
+    ground-color: rgb(252, 248, 248);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign-in-btn {
+    padding: 15px 30px;
+    background-color:  #2b73e0; /* Original Spotify green color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #ea3b3b; 
+    color: #000;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.5s infinite;
+  }
+  
+  
+  /* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+  
+.modal-content{
+    background-color: rgba(66, 61, 61, 0.377);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    background-color: #ff007f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #e60073;
+  }
+  label{
+    color: #0d0d0d;
+  }
+  .logo h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }.sign-in-btn {
+    padding: 15px 30px;
+    background-color:  #2b73e0; /* Original Spotify green color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #ea3b3b; 
+    color: #000;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.5s infinite;
+  }
+  
+  
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #1DB954;
+  }
+  .close:focus {
+    color: black;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    background-color: #ff007f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #e60073;
+  }
+  label{
+    color: #0d0d0d;
+  }

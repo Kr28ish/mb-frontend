@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodBeats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <h1>M o o d  B e a t s</h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Playlist</a></li>
+                <li><button id="signInBtn" class="sign-in-btn">Sign In</button>
+
+                    <!-- Login Popup Modal -->
+                    <div id="loginModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Login</h2>
+                            <form id="loginForm">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" required>
+                                
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" required>
+                                
+                                <button type="submit" class="login-btn">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="MB.jpg" alt="Artist Image" class="hero-img">
+                <div class="hero-text">
+                    <h2>Listen now to Weyes' Blood new release</h2>
+                    <p>One of the most anticipated Art Pop albums of the year</p>
+                    <button class="play-btn">Play</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist">
+            <h2>Recently Played</h2>
+            <div class="album-grid">
+                <div class="album-card">
+                    <div class="song-info">
+                        <img height="100px" width="100px" src="https://1.bp.blogspot.com/-oKTYYlR8Iq0/Xuxzc2edtTI/AAAAAAAACO4/jTH93zBlU6grcWE2MR25_cE7hZzC7Yr0ACLcBGAsYHQ/s1600/Artwork.jpg" alt="Album Cover" class="album-cover">
+                        <p>Raabta</p>
+                    </div>
+                    <audio id="audio2" src=""></audio>
+                    <div class="controls">
+                        <button onclick="forwardSong('audio2')"> ↻</button>
+                        <button class="play" onclick="playSong('audio2')">II</button>
+                        <button onclick="reverseSong('audio2')">↺</button>
+                    </div>
+                </div>
+                <div class="album-card">
+                    <div class="song-info">
+                        <img height="100px" width="100px" src="https://1.bp.blogspot.com/-oKTYYlR8Iq0/Xuxzc2edtTI/AAAAAAAACO4/jTH93zBlU6grcWE2MR25_cE7hZzC7Yr0ACLcBGAsYHQ/s1600/Artwork.jpg" alt="Album Cover" class="album-cover">
+                        <p>Raabta</p>
+                    </div>
+                    <audio id="audio2" src="song2.mp3"></audio>
+                    <div class="controls">
+                        <button onclick="forwardSong('audio2')"> ↻</button>
+                        <button class="play" onclick="playSong('audio2')">II</button>
+                        <button onclick="reverseSong('audio2')">↺</button>
+                    </div>
+                </div>
+                <div class="album-card">
+                    <div class="song-info">
+                        <img height="100px" width="100px" src="https://1.bp.blogspot.com/-oKTYYlR8Iq0/Xuxzc2edtTI/AAAAAAAACO4/jTH93zBlU6grcWE2MR25_cE7hZzC7Yr0ACLcBGAsYHQ/s1600/Artwork.jpg" alt="Album Cover" class="album-cover">
+                        <p>Raabta</p>
+                    </div>
+                    <audio id="audio2" src="song2.mp3"></audio>
+                    <div class="controls">
+                        <button onclick="forwardSong('audio2')"> ↻</button>
+                        <button class="play" onclick="playSong('audio2')">II</button>
+                        <button onclick="reverseSong('audio2')">↺</button>
+                    </div>
+                </div>
+                <div class="album-card">
+                    <div class="song-info">
+                        <img height="100px" width="100px" src="https://1.bp.blogspot.com/-oKTYYlR8Iq0/Xuxzc2edtTI/AAAAAAAACO4/jTH93zBlU6grcWE2MR25_cE7hZzC7Yr0ACLcBGAsYHQ/s1600/Artwork.jpg" alt="Album Cover" class="album-cover">
+                        <p>Raabta</p>
+                    </div>
+                    <audio id="audio2" src="song2.mp3"></audio>
+                    <div class="controls">
+                        <button onclick="forwardSong('audio2')"> ↻</button>
+                        <button class="play" onclick="playSong('audio2')">II</button>
+                        <button onclick="reverseSong('audio2')">↺</button>
+                    </div>
+                </div>
+                <div class="album-card">
+                    <div class="song-info">
+                        <img height="100px" width="100px" src="https://1.bp.blogspot.com/-oKTYYlR8Iq0/Xuxzc2edtTI/AAAAAAAACO4/jTH93zBlU6grcWE2MR25_cE7hZzC7Yr0ACLcBGAsYHQ/s1600/Artwork.jpg" alt="Album Cover" class="album-cover">
+                        <p>Raabta</p>
+                    </div>
+                    <audio id="audio2" src="song2.mp3"></audio>
+                    <div class="controls">
+                        <button onclick="forwardSong('audio2')"> ↻</button>
+                        <button class="play" onclick="playSong('audio2')">II</button>
+                        <button onclick="reverseSong('audio2')">↺</button>
+                    </div>
+                </div>
+                <div class="album-card">
+                    <div class="song-info">
+                        <img height="100px" width="100px" src="https://1.bp.blogspot.com/-oKTYYlR8Iq0/Xuxzc2edtTI/AAAAAAAACO4/jTH93zBlU6grcWE2MR25_cE7hZzC7Yr0ACLcBGAsYHQ/s1600/Artwork.jpg" alt="Album Cover" class="album-cover">
+                        <p>Raabta</p>
+                    </div>
+                    <audio id="audio2" src="song2.mp3"></audio>
+                    <div class="controls">
+                        <button onclick="forwardSong('audio2')"> ↻</button>
+                        <button class="play" onclick="playSong('audio2')">II</button>
+                        <button onclick="reverseSong('audio2')">↺</button>
+                    </div>
+                </div>
+                <div class="album-card">
+                    <div class="song-info">
+                        <img height="100px" width="100px" src="https://1.bp.blogspot.com/-oKTYYlR8Iq0/Xuxzc2edtTI/AAAAAAAACO4/jTH93zBlU6grcWE2MR25_cE7hZzC7Yr0ACLcBGAsYHQ/s1600/Artwork.jpg" alt="Album Cover" class="album-cover">
+                        <p>Raabta</p>
+                    </div>
+                    <audio id="audio2" src="song2.mp3"></audio>
+                    <div class="controls">
+                        <button onclick="forwardSong('audio2')"> ↻</button>
+                        <button class="play" onclick="playSong('audio2')">II</button>
+                        <button onclick="reverseSong('audio2')">↺</button>
+                    </div>
+                </div>
+                <!-- Add more album cards as necessary -->
+            </div>
+        </section>
+
+        <section class="playlist">
+            <h2>New Releases</h2>
+            <div class="album-grid">
+                <div class="album-card">
+                    <img src="album4.jpg" alt="Album 1">
+                    <p>New Album 1<br>Artist 1</p>
+                </div>
+                <div class="album-card">
+                    <img src="album5.jpg" alt="Album 2">
+                    <p>New Album 2<br>Artist 2</p>
+                </div>
+                <!-- Add more album cards as necessary -->
+            </div>
+        </section>
+        <iframe src="https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <div class="album-card">
+            <div class="song-info">
+                <iframe src="https://open.spotify.com/embed/track/3n3Ppam7vgaVa1iaRUc9Lp" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4LJhJ6DQS7NwE7UKtvcM52?utm_source=generator" width="300" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="player">
+            <div class="player-details">
+                <img src="song-cover.jpg" alt="Current Song" class="current-song-img">
+                <p>First Taste<br>Mild Orange</p>
+            </div>
+            <div class="player-controls">
+                <button>⏮️</button>
+                <button>⏯️</button>
+                <button>⏭️</button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
